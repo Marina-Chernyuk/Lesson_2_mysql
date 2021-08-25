@@ -1,0 +1,18 @@
+
+student@Ubuntu-MySQL-VirtualBox:~$ mysqldump -u root -p example > example.sql
+mysql> CREATE DATABASE sample;
+mysql> \q
+student@Ubuntu-MySQL-VirtualBox:~$ mysql -u root -p sample < example.sql
+student@Ubuntu-MySQL-VirtualBox:~$ mysql
+mysql> USE sample
+mysql> SHOW TABLES;
++------------------+
+| Tables_in_sample |
++------------------+
+| users            |
++------------------+
+1 row in set (0.00 sec)
+
+mysql> \q
+Bye
+student@Ubuntu-MySQL-VirtualBox:~$ 

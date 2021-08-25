@@ -1,0 +1,3 @@
+
+student@Ubuntu-MySQL-VirtualBox:~$ mysqldump  -u root -p --where="true limit 100" mysql help_keyword > help_keyword_100.sql
+
